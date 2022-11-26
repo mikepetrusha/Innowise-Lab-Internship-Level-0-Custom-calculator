@@ -1,0 +1,57 @@
+{
+  "name": "innowise-lab-internship-level-0-custom-calculator",
+  "version": "1.0.0",
+  "description": "Custom Calculator",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development",
+    "precommit": "lint-staged",
+    "lint:fix": "eslint",
+    "test": "jest",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikepetrusha/Innowise-Lab-Internship-Level-0-Custom-calculator.git"
+  },
+  "keywords": [],
+  "author": "Michael Petrusha",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^29.3.1",
+    "babel-loader": "^9.1.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.2",
+    "eslint": "^8.28.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "gh-pages": "^4.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "husky": "^8.0.2",
+    "jest": "^29.3.1",
+    "jest-environment-jsdom": "^29.3.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.0",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "lint-staged": {
+    "*. {js, jsx}": [
+      "node_modules/.bin/eslint",
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/mikepetrusha/Innowise-Lab-Internship-Level-0-Custom-calculator/issues"
+  },
+  "homepage": "https://github.com/mikepetrusha/Innowise-Lab-Internship-Level-0-Custom-calculator#readme"
+}
